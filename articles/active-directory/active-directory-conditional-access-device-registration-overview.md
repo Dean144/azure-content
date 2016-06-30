@@ -58,7 +58,7 @@ By default, two-factor authentication is not enabled for the service. However, t
 - If you are using AD FS with Windows Server 2012 R2, you must configure a two-factor authentication module in AD FS, see [Using Multi-Factor Authentication with Active Directory Federation Services](../multi-factor-authentication/multi-factor-authentication-get-started-server.md).
 
 ## Configure Azure Active Directory Device Registration discovery
-Windows 7 and Windows 8.1 devices will discover the Device Registration service by combining the user account name with a well-known Device Registration server name.
+Windows 7 and Windows 8.1 devices will discover the Device Registration service by combining the user account name with a well-known Device Registration server name. (What about Windows 10? does it work the same way or is something different ?)
 
 You must create a DNS CNAME record that points to the A record associated with your Azure Active Directory Device Registration service. The CNAME record must use the well-known prefix enterpriseregistration followed by the UPN suffix used by the user accounts at your organization. If your organization uses multiple UPN suffixes, multiple CNAME records must be created in DNS.
 
